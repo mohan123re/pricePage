@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plan {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.price {
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.customization-options {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    padding: 8px;
+    margin-left: 5px;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Pricing Plans</h1>
+    </header>
+
+    <main>
+        <section class="pricing-plans">
+            <div class="plan" id="basic-plan">
+                <h2>Basic Plan</h2>
+                <p class="price">$19.99/month</p>
+                <!--<ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                </ul>-->
+            </div>
+
+            <div class="plan" id="pro-plan">
+                <h2>Pro Plan</h2>
+                <p class="price">$29.99/month</p>
+                <!--ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                </ul-->
+            </div>
+
+            <!-- Add more plans as needed -->
+
+        </section>
+
+        <section class="customization-options">
+            <label for="currency">Choose Currency:</label>
+            <select id="currency">
+                <option value="$">USD</option>
+                <option value="€">EUR</option>
+                <option value="₹">INR</option>
+         
+                <!-- Add more currency options -->
+            </select>
+        </section>
+    </main>
+
+    <script>
+        // Optional: Add JavaScript for interactive pricing toggles
+document.getElementById('basic-plan').addEventListener('click', function() {
+    alert('Basic Plan Selected');
+});
+
+document.getElementById('pro-plan').addEventListener('click', function() {
+    alert('Pro Plan Selected');
+});
+
+    </script>
+</body>
+</html>
